@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="hide_db_link" inherit_id="web.layout" name="Hide Manage Database Link - inject css">
+        <!-- insert CSS after the core script tag which exists in web.layout -->
+        <xpath expr="//script[@id='web.layout.odooscript']" position="after">
+            <style type="text/css">
+                /* hide Manage Databases link anywhere it appears */
+                a[href*="/web/database/manager"] { display: none !important; }
+            </style>
+        </xpath>
+    </template>
+</odoo>

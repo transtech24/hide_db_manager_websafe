@@ -1,0 +1,19 @@
+{
+    'name': 'Hide Manage Databases Link',
+    'version': '16.0.1.0.0',
+    'category': 'Tools',
+    'summary': 'Hide the Manage Databases link from Odoo 16 login screen and prevent access to web/database/manager',
+    'description': 'Removes the Manage Databases link from the Odoo login page to improve security and UX and throws up 404 error if user tries to access web/database/manager. Works even when list_db = True so scheduled modules like auto_backup can continue to run without showing the login manager link.',
+    'author': 'Dennis Alabi (transtech247@gmail.com)',
+    'company': 'Transition Technologies',
+    'maintainer': 'Transition Technologies',
+    'website': 'https://web.facebook.com/transtechno',
+    'license': 'OPL-1',
+    'price': 13.0,
+    'currency': 'USD',
+    'depends': ['web'],
+    'data': ['views/login_templates.xml'],
+    'installable': True,
+    'application': False,
+    'auto_install': False
+}

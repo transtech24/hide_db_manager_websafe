@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hide Manage Databases Link - Odoo16 App</title>
+  <meta name="description" content="Hide Manage Databases link from Odoo 16 login screen. Improve security and UX while scheduled tasks like auto_backup continue to run and also and throws up 404 error if user tries to access web/database/manager.">
+  <meta name="keywords" content="Odoo 16, hide manage databases, security, auto_backup, OCA, login, developer, Odoo module, OPL-1, 404 Not Found error, block manage databases access">
+  <style>
+    body { font-family: Arial, sans-serif; color:#333; padding:20px; }
+    .hero { display:flex; gap:20px; align-items:center; }
+    .hero img { width:180px; height:180px; object-fit:cover; border-radius:12px; }
+    h1 { color:#0b6; }
+    ul { line-height:1.6; }
+    .features { background:#fafafa; padding:15px; border-radius:8px; margin-top:12px; }
+    code { background:#eee; padding:2px 6px; border-radius:4px; }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <img src="icon.png" alt="Icon">
+    <div>
+      <h1>Hide Manage Databases Link</h1>
+      <p>Clean and secure login: hide the Manage Databases link on the Odoo 16 login page and throws up 404 error if user tries to access web/database/manager. Works even when <code>list_db = True</code>, allowing modules like OCA's <strong>auto_backup</strong> to operate normally while keeping the login UI tidy.</p>
+      <p><strong>Price:</strong> $13 (OPL-1)</p>
+    </div>
+  </div>
+
+  <div class="features">
+    <h2>Features</h2>
+    <ul>
+      <li>Hide "Manage Databases" link from the login screen</li>
+      <li>Block access to "web/database/manager"</li>
+      <li>Compatible with Odoo 16 Community & Enterprise</li>
+      <li>Non-destructive: hides via CSS to avoid JS breakage</li>
+      <li>Works while <code>list_db = True</code> so backup tasks continue</li>
+      <li>OPL-1 licensed</li>
+    </ul>
+  </div>
+
+  <h2>How it works</h2>
+  <p>The module injects a small CSS rule into the layout so the anchor pointing to <code>/web/database/manager</code> is hidden visually. This approach keeps the DOM intact and prevents JavaScript errors that can occur if elements are removed.</p>
+
+  <h2>Installation</h2>
+  <ol>
+    <li>Copy the unzipped folder <code>hide_db_manager_websafe</code> into your Odoo addons folder.</li>
+    <li>Restart Odoo server.</li>
+    <li>Apps → remove 'Apps' filter → Update App List → Install module.</li>
+  </ol>
+
+  <h2>SEO & Keywords</h2>
+  <p>Odoo 16, hide manage databases, OPL-1, auto_backup, OCA, login security, hide database manager,  404 Not Found error, block manage databases access</p>
+
+  <h2>Screenshots</h2>
+  <p>See included screenshots for before/after login examples.</p>
+
+  <h2>Support</h2>
+  <p>Email: transtech247@gmail.com</p>
+</body>
+</html>
