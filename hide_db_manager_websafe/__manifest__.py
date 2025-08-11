@@ -13,6 +13,7 @@
     'currency': 'USD',
     'depends': ['web'],
     'data': ['views/login_templates.xml'],
+    'images': ['static/description/icon.png', 'static/description/cover.png'],
     'installable': True,
     'application': False,
     'auto_install': False
